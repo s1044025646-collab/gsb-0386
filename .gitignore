@@ -1,0 +1,9 @@
+node_modules/
+dist/
+data/
+data-apitest/
+out.txt
+err.txt
+*.db
+*.db-wal
+*.db-shm

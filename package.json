@@ -1,0 +1,21 @@
+{
+  "name": "lazy-segment-tree-backend",
+  "version": "1.0.0",
+  "description": "懒标记段树：区间加法 + 最左最小值查询（TypeScript / Node.js / SQLite 后端，仅 API 与 CLI）",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-transform-types --loader ./test/ts-loader.mjs --test test/*.test.ts",
+    "start": "node --experimental-transform-types --loader ./test/ts-loader.mjs src/server.ts",
+    "cli": "node --experimental-transform-types --loader ./test/ts-loader.mjs src/cli.ts",
+    "demo": "node --experimental-transform-types --loader ./test/ts-loader.mjs src/cli.ts demo"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
